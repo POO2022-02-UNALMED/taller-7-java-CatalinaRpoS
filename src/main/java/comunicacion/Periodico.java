@@ -13,7 +13,6 @@ public class Periodico extends Escrito{
 		this.interpretacion = interpretacion;
 	}
 
-	// Métodos get y set
 	public String getFecha() {
 		return fecha;
 	}
@@ -38,19 +37,16 @@ public class Periodico extends Escrito{
 		this.interpretacion = interpretacion;
 	}
 
-	// Implementación del método abstracto palabrasTotales()
 	@Override
 	int palabrasTotales(int palabrasPagina) {
 		return super.getPaginas() * palabrasPagina * 10;
 	}
 
-	// Implementación del método abstracto interpretación()
 	@Override
 	String interpretacion() {
 		return this.interpretacion;
 	}
 
-	// Implementación del método abstracto toString()
 	@Override
 	public String toString() {
 		String  descripcion = super.getOrigen() + "\n" + 

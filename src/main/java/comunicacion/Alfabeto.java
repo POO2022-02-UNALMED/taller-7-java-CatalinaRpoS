@@ -11,8 +11,6 @@ public class Alfabeto extends Pictograma{
     	this.interpretacion = interpretacion;
     }
     
-    // Métodos get y set
-
 	public String[] getLetras() {
 		return letras;
 	}
@@ -29,13 +27,11 @@ public class Alfabeto extends Pictograma{
 		this.interpretacion = interpretacion;
 	}
 	
-	// Implementación del método abstracto interpretación()
 	@Override
 	public String interpretacion() {
 		return this.interpretacion;
 	}
 
-	// Implementación del método abstracto toString()
 	@Override
 	public String toString() {
 	

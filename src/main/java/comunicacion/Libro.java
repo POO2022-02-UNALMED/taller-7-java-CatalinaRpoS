@@ -2,26 +2,26 @@ package comunicacion;
 
 public class Libro extends Escrito{
 	
-	private String coautor;
+	private String co_autor;
 	private String editorial;
 	private String edicion;
 	private String interpretacion;
 	
-	public Libro(String origen, String titulo, String autor, int paginas, String coautor, String editorial, String edicion, String interpretacion) {
+	public Libro(String origen, String titulo, String autor, int paginas, String co_autor, String editorial, String edicion, String interpretacion) {
 		super(origen, titulo, autor, paginas);
-		this.coautor = coautor;
+		this.co_autor = co_autor;
 		this.editorial = editorial;
 		this.setEdicion(edicion);
 		this.interpretacion = interpretacion;
 	}
 
-	// Métodos get y set
-	public String getCoautor() {
-		return coautor;
+	// Metodos get y set
+	public String getCo_autor() {
+		return co_autor;
 	}
 
-	public void setCoautor(String coautor) {
-		this.coautor = coautor;
+	public void setCo_autor(String co_autor) {
+		this.co_autor = co_autor;
 	}
 
 	public String getEditorial() {
@@ -48,26 +48,23 @@ public class Libro extends Escrito{
 		this.interpretacion = interpretacion;
 	}
 
-	// Implementación del método abstracto palabrasTotales()
 	@Override
 	int palabrasTotales(int palabrasPagina) {
 		return super.getPaginas() * palabrasPagina * 2;
 	}
 
-	// Implementación del método abstracto interpretación()
 	@Override
 	String interpretacion() {
 		return this.interpretacion;
 	}
 	
-	// Implementación del método abstracto toString()
 	@Override
 	public String toString() {
 		String descripcion = super.getOrigen() + "\n" + 
 				super.getTitulo() + "\n" + 
 				super.getAutor() + "\n" + 
 				Integer.toString(super.getPaginas()) + "\n" + 
-				this.coautor + "\n" + 
+				this.co_autor + "\n" + 
 				this.editorial + "\n" + 
 				this.edicion;
 		

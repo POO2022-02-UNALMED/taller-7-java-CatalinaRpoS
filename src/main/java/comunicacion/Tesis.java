@@ -17,7 +17,6 @@ public class Tesis extends Escrito{
 		this.interpretacion = interpretacion;
 	}
 	
-	// Métodos get y set
 	public String getIdea() {
 		return idea;
 	}
@@ -58,19 +57,16 @@ public class Tesis extends Escrito{
 		this.interpretacion = interpretacion;
 	}
 
-	// Implementación del método abstracto palabrasTotales()
 	@Override
 	int palabrasTotales(int palabrasPagina) {
 		return super.getPaginas() * palabrasPagina * 5;
 	}
 	
-	// Implementación del método abstracto interpretación()
 	@Override
 	String interpretacion() {
 		return this.interpretacion;
 	}
 
-	// Implementación del método abstracto toString()
 	@Override
 	public String toString() {
 		String  descripcion = super.getOrigen() + "\n" + 
