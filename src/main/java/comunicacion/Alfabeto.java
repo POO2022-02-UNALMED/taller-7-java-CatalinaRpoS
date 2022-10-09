@@ -27,6 +27,10 @@ public class Alfabeto extends Pictograma{
 		this.interpretacion = interpretacion;
 	}
 	
+	public int cantidadLetras() {
+		return letras.length;
+	}
+	
 	@Override
 	public String interpretacion() {
 		return this.interpretacion;
