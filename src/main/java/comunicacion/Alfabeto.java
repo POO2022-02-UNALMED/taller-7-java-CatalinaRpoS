@@ -46,7 +46,7 @@ public class Alfabeto extends Pictograma{
 			descripcion += letras[i] + ", ";
 		}
 		
-		descripcion += letras[tam];
+		descripcion += letras[tam - 1];
 		return descripcion;
 	}
     
